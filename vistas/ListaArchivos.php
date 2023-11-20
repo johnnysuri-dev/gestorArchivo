@@ -24,23 +24,6 @@
 
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
@@ -94,6 +77,8 @@
           <input  class="form-control" type="date" name="nombre"> <br>
           <label>Direccion</label>
           <input  class="form-control" type="text" name="nombre">
+          <label>Categoria</label>
+          <input  class="form-control" type="text" name="categoria">
           <label>archivo</label>
           <input class="form-control" type="file" name="nombre">
           <br>
