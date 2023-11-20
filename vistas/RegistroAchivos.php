@@ -64,43 +64,38 @@
 <div class="container">
 
       <div class="row">
-        <div class="col-sm-2">  
+        <div class="col-sm-4">  
         </div>
-        <div class="col-sm-8">
-          <h1>Lista de archivos</h1>
-          <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+        <div class="col-sm-4">
+          <h1>Registro de archivo</h1>
+        <form method="post" action="../controlador/crtArchivos.php" >
+          <label>Nombre</label>
+          <input class="form-control"  type="text" name="nombre"> <br>
+          <label>Tama;o</label>
+          <input  class="form-control" type="text" name="tam"> <br>
+          <label>Descripcion</label>
+          <input  class="form-control" type="text" name="descripcion"> <br>
+          <label>Direccion</label>
+          <input  class="form-control" type="text" name="direccion">
 
-    
+          <label >Categoria</label>
+          <select class="form-control" name="categoria" id="">
+          <option value="value1">pdf</option>
+          <option value="value1">doc</option>
+          <option value="value1">imagen</option>
+          <option value="value1">zip</option>
+          </select>
+          <br>
+          <label>archivo</label>
+          <input class="form-control" type="file" name="nombre">
+          <br>
+          <button type="submit" name="add_cat" class="btn btn-primary">Guardar</button>
+          <input type="button" class="btn btn-info" value="Cancelar">
+
+        </form> 
         </div>
-        <div class="col-sm-2">
+
+        <div class="col-sm-4">
           
         </div>
 
