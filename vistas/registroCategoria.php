@@ -42,7 +42,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="RegistroCategoria.php">Categoria</a>
+        <a class="nav-link" href="crtCategorias.php">Categoria</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled">Disabled</a>
@@ -68,19 +68,13 @@
         </div>
         <div class="col-sm-4">
           <h1>Registro de archivo</h1>
-        <form method="POST" action="../controlador/crtArchivos.php" >
-          <label>Nombre</label>
-          <input class="form-control"  type="text" name="nombre"> <br>
-          <label>Tama;o</label>
-          <input  class="form-control" type="text" name="tam"> <br>
-          <label>Descripcion</label>
-          <input  class="form-control" type="text" name="descripcion"> <br>
-          <label>Direccion</label>
-          <input  class="form-control" type="text" name="direccion">
-          <br>
-          <label>archivo</label>
-          <input class="form-control" type="file" name="nombre">
-          <br>
+        <form method="POST" action="../controlador/crtCategorias.php" >
+              <label>Nombre</label>
+              <input class="form-control"  type="text" name="nombre"> <br>
+              
+              <label>Descripcion</label>
+              <input  class="form-control" type="text" name="descripcion"> <br>
+  
           <button type="submit" name="add_cat" class="btn btn-primary">Guardar</button>
           <input type="button" class="btn btn-info" value="Cancelar">
 
